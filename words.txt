@@ -1,0 +1,14 @@
+linux 常用命令
+1 查看僵尸进程
+ps -A -ostat, ppid,pid cmd | grep -e '^[Zz]';
+
+2 杀死进程
+kill pid(进程ID)
+kill -HUP 12339(pid) 杀掉僵尸进程
+
+3 wget：无法解析主机地址。
+解决办法：
+登入root
+vim /etc/resolv.conf
+修改内容为下（将DNS地址改为google域名服务器）
+nameserver 8.8.8.8 
