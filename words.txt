@@ -12,3 +12,15 @@ kill -HUP 12339(pid) 杀掉僵尸进程
 vim /etc/resolv.conf
 修改内容为下（将DNS地址改为google域名服务器）
 nameserver 8.8.8.8 
+
+git 常用命令
+$ git clone https://github.com/phplpf/PHP.git    //克隆一个文件到本地
+$ git branch testing  //创建一个新的分支
+$ git add words.txt  //新增一个文件
+$ git commit -a -m "file" filename  //提交文件到当前分支
+$ git config --global user.email "you@example.com"  // 添加邮箱
+$ git config --global user.name "Your Name"  //添加用户名
+$ git push -u origin master   //第一次提交master分支到服务器
+$ git checkout -b isLocal_1111  //创建并切换到isLocal_1111分支
+$ git checkout master   //切换的master分支
+$ git merge isLocal_1111   合并分支
